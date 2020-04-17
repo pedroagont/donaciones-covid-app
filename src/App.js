@@ -1,6 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  Container,
+  Row,
+  Col,
+  Jumbotron,
+  Button
+} from 'reactstrap';
 
 function App() {
   return (
