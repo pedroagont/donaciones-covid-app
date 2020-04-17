@@ -33,7 +33,10 @@ class Donantes extends Component {
             return (
               <Donante
                 nombre={donante.nombre}
-                precio={donante.precio} />
+                ciudad={donante.ciudad}
+                pais={donante.pais}
+                correo={donante.correo}
+                donaciones={donante.donaciones} />
             )
           })}
         </React.Fragment>

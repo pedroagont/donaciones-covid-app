@@ -5,23 +5,27 @@ import {
 
 class Donante extends Component {
   state = {
-    nombre: this.props.nombre,
+    nombrehospital: this.props.nombrehospital,
     ciudad: this.props.ciudad,
     pais: this.props.pais,
-    correo: this.props.correo,
-    donaciones: this.props.donaciones,
+    nombredelcontacto: this.props.nombredelcontacto,
+    telefonodelcontacto: this.props.telefonodelcontacto,
+    correodelcontacto: this.props.correodelcontacto,
+    monto: this.props.monto,
   }
 
   render() {
     return (
       <Card className="mt-3" style={{ backgroundColor: '#ae51f5' }}>
         <CardBody>
-          <CardTitle style={{ color: 'white' }}>{ this.state.nombre }</CardTitle>
+          <CardTitle style={{ color: 'white' }}>{ this.state.nombrehospital }</CardTitle>
           <CardText style={{ color: 'white' }}>
             {`Ciudad: ${this.state.ciudad}
               País: ${this.state.pais}
-              Correo: ${this.state.correo}
-              Ha donado: ${this.state.donaciones}`}
+              Contacto: ${this.state.nombredelcontacto}
+              Teléfono: ${this.state.telefonodelcontacto}
+              Correo: ${this.state.correodelcontacto}
+              Monto: ${this.state.monto}`}
           </CardText>
         </CardBody>
       </Card>
