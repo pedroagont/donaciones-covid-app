@@ -191,7 +191,7 @@ class RegistrarHospital extends Component {
             </FormGroup>
           </Col>
         </Row>
-        <Button onClick={this.manejarSubmit}>Registrar</Button>
+        <Button className="bg-primary" onClick={this.manejarSubmit}>Registrar</Button>
       </Form>
       </React.Fragment>
 
