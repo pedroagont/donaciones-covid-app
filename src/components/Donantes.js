@@ -29,6 +29,7 @@ class Donantes extends Component {
       return (
         <React.Fragment>
           <span>Se encontraron {donantes.length} donantes</span>
+          <br />
           { donantes.map(donante => {
             return (
               <Donante
