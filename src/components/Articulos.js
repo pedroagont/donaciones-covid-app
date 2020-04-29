@@ -4,7 +4,7 @@ import Articulo from './Articulo';
 
 class Articulos extends Component {
   state = {
-    titulo: "Articulos",
+    titulo: "Artículos",
     articulos: [],
   };
 
@@ -37,7 +37,7 @@ class Articulos extends Component {
             )
           })}
         </React.Fragment>
-      )
+      );
     }
   }
 
