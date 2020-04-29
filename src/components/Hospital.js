@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Card, CardText, CardBody, CardTitle,
+  Card, CardTitle, CardText
 } from 'reactstrap';
 
 class Donante extends Component {
@@ -16,18 +16,14 @@ class Donante extends Component {
 
   render() {
     return (
-      <Card className="mt-3" style={{ backgroundColor: '#ae51f5' }}>
-        <CardBody>
-          <CardTitle style={{ color: 'white' }}>{ this.state.nombrehospital }</CardTitle>
-          <CardText style={{ color: 'white' }}>
-            {`Ciudad: ${this.state.ciudad}
-              País: ${this.state.pais}
-              Contacto: ${this.state.nombredelcontacto}
-              Teléfono: ${this.state.telefonodelcontacto}
-              Correo: ${this.state.correodelcontacto}
-              Monto: ${this.state.monto}`}
-          </CardText>
-        </CardBody>
+      <Card className="my-3" body outline color="primary">
+        <CardTitle className="font-weight-bold text-primary">{ this.state.nombrehospital.toUpperCase() }</CardTitle>
+        <CardText className="font-weight-bold">Ciudad: <span className="font-weight-light">{ this.state.ciudad }</span></CardText>
+        <CardText className="font-weight-bold">País: <span className="font-weight-light">{ this.state.pais }</span></CardText>
+        <CardText className="font-weight-bold">Contacto: <span className="font-weight-light">{ this.state.nombredelcontacto }</span></CardText>
+        <CardText className="font-weight-bold">Teléfono: <span className="font-weight-light">{ this.state.telefonodelcontacto }</span></CardText>
+        <CardText className="font-weight-bold">Correo: <span className="font-weight-light">{ this.state.correodelcontacto }</span></CardText>
+        <CardText className="font-weight-bold">Monto: <span className="font-weight-light">$ { this.state.monto } MXN</span></CardText>
       </Card>
      );
   }

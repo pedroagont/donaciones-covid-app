@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
-  Card, CardText, CardBody, CardTitle,
+  Card, CardTitle, CardText
 } from 'reactstrap';
+
 
 class Articulo extends Component {
   state = {
@@ -10,16 +11,12 @@ class Articulo extends Component {
   }
 
   render() {
-    return (
-      <Card className="mt-3" style={{ backgroundColor: '#ae51f5' }}>
-        <CardBody>
-          <CardTitle style={{ color: 'white' }}>{ this.state.nombre }</CardTitle>
-          <CardText style={{ color: 'white' }}>
-            {`Precio: ${this.state.precio}`}
-          </CardText>
-        </CardBody>
-      </Card>
-     );
+     return (
+        <Card className="my-3" body outline color="primary">
+          <CardTitle className="font-weight-bold text-primary">{ this.state.nombre.toUpperCase() }</CardTitle>
+          <CardText className="font-weight-bold">Precio: <span className="font-weight-light">${ this.state.precio } MXN</span></CardText>
+        </Card>
+    );
   }
 }
 
