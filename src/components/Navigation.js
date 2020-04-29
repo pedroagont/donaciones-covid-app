@@ -25,7 +25,7 @@ const Navigation = (props) => {
         <NavbarBrand href="/">Donaciones COVID</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink>
                 <Link to="/articulos">Artículos Disponibles</Link>
